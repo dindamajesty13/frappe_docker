@@ -4,7 +4,7 @@ USER root
 
 RUN apt-get update && apt-get install -y git
 
-RUN git clone https://github.com/dindamajesty13/warestock.git \
+RUN bench get-app https://github.com/dindamajesty13/warestock.git \
     /home/frappe/frappe-bench/apps/warestock
 
 USER frappe
