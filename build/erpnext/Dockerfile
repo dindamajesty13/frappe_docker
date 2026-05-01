@@ -11,6 +11,3 @@ RUN --mount=type=ssh \
     git clone git@github.com:dindamajesty13/warestock.git /home/frappe/frappe-bench/apps/warestock
 
 USER frappe
-
-RUN bench --site all install-app warestock
-RUN bench build --production
