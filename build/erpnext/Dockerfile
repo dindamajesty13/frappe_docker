@@ -4,8 +4,8 @@ USER root
 
 RUN apt-get update && apt-get install -y git
 
-RUN bench get-app https://github.com/dindamajesty13/warestock.git \
-    /home/frappe/frappe-bench/apps/warestock
+RUN cd /home/frappe/frappe-bench && \
+    bench get-app warestock https://github.com/dindamajesty13/warestock.git
 
 USER frappe
 
